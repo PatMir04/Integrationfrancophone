@@ -4,37 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intégration des Immigrants Francophones - Accueil</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            /* Using a light stone color as a beige base */
             background-color: #f5f5f4; /* Tailwind stone-100 */
         }
-        /* Hero Background Image */
         .hero-bg {
-            /* Updated to use image2.jpg */
             background-image: url('images/image2.png');
             background-size: cover;
             background-position: center;
-            /* Fallback background color if image fails */
-            background-color: #e2e8f0; /* Tailwind slate-200 */
+            background-color: #e2e8f0; /* Fallback */
         }
-        /* Simple animation for buttons on hover */
         .btn-hover-effect:hover {
             transform: translateY(-2px);
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        /* Ensure images don't exceed their container width */
         img {
-           max-width: 100%;
-           height: auto;
-           display: block; /* Prevents bottom space */
-           margin-left: auto; /* Center images */
-           margin-right: auto;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
     </style>
 </head>
@@ -53,17 +48,17 @@
                 <a href="contact.html" class="text-gray-700 hover:text-orange-600">Contact</a>
             </div>
             <button id="mobile-menu-button" class="md:hidden flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-orange-600 hover:border-orange-600">
-                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
             </button>
         </nav>
         <div id="mobile-menu" class="md:hidden hidden bg-white shadow-md">
-             <a href="index.html" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Accueil</a>
-             <a href="about.html" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">À Propos</a>
-             <a href="programs.html" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Programmes</a>
-             <a href="registration.html" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Inscription</a>
-             <a href="partners.html" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Partenariats</a>
-             <a href="impact.html" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Notre Impact</a>
-             <a href="contact.html" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Contact</a>
+            <a href="index.html" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Accueil</a>
+            <a href="about.html" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">À Propos</a>
+            <a href="programs.html" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Programmes</a>
+            <a href="registration.html" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Inscription</a>
+            <a href="partners.html" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Partenariats</a>
+            <a href="impact.html" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Notre Impact</a>
+            <a href="contact.html" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Contact</a>
         </div>
     </header>
 
@@ -71,11 +66,12 @@
         <div class="bg-black bg-opacity-60">
             <div class="container mx-auto px-6 text-center py-10">
                 <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">S'épanouir en français, ensemble.</h1>
-                <p class="text-lg md:text-xl mb-8">Facilitons l'adaptation des familles immigrantes francophones au Canada par le sport et la communauté.</p>
+                <p class="text-lg md:text-xl mb-8">Sport, danse et communauté pour apprendre et vivre en français.</p>
                 <div class="space-y-4 sm:space-y-0 sm:space-x-4">
                     <a href="registration.html" class="inline-block bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out btn-hover-effect">Inscrivez votre enfant</a>
                     <a href="programs.html" class="inline-block bg-transparent border-2 border-white hover:bg-white hover:text-orange-600 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out btn-hover-effect">Découvrez nos programmes</a>
                 </div>
+                <p class="text-md text-white font-medium mt-6">Un espace pour tous les enfants, qu'ils soient nouveaux arrivants, nés au Canada ou futurs francophones enthousiastes !</p>
             </div>
         </div>
     </section>
@@ -84,13 +80,21 @@
         <div class="container mx-auto px-6 text-center">
             <h2 class="text-3xl font-bold text-orange-600 mb-6">Bienvenue!</h2>
             <p class="text-lg text-gray-700 max-w-3xl mx-auto mb-8">
-                Notre programme unique utilise le sport et les activités culturelles pour aider les enfants immigrants francophones (5-12 ans) à s'intégrer, à développer leurs compétences linguistiques en français et à tisser des liens durables dans un environnement amusant et inclusif.
+                Notre programme est ouvert à toutes les familles :
+            </p>
+            <ul class="list-disc text-left text-gray-600 max-w-3xl mx-auto mb-8 pl-6">
+                <li>Familles immigrantes francophones nouvellement arrivées</li>
+                <li>Familles francophones installées de longue date, même si les enfants sont nés au Canada</li>
+                <li>Parents anglophones ou allophones souhaitant offrir le français à leurs enfants</li>
+            </ul>
+            <p class="text-lg text-gray-700 max-w-3xl mx-auto mb-8">
+                Toutes nos activités sont 100% en français, dans un cadre ludique, immersif et inclusif.
             </p>
             <img src="images/image4.png"
-                 alt="Enfants francophones courant et jouant au soccer en plein air"
+                 alt="Enfants courant et jouant en français"
                  class="mx-auto rounded-lg shadow-lg mb-8 w-full max-w-xl"
-                 onerror="this.onerror=null; this.src='https://placehold.co/600x400/fecaca/991b1b?text=Image+non+disponible'; this.alt='Image non disponible'">
-             <p class="text-md text-gray-600 italic">"Ensemble, créons un environnement où chaque enfant s'épanouit."</p>
+                 onerror="this.onerror=null; this.src='https://placehold.co/600x400/fecaca/991b1b?text=Image+non+disponible';">
+            <p class="text-md text-gray-600 italic">"Ensemble, créons un espace où chaque enfant s'épanouit en français."</p>
         </div>
     </section>
 
@@ -99,39 +103,35 @@
             <h2 class="text-3xl font-bold text-center text-orange-600 mb-12">Ce que nous offrons</h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
                 <div class="p-6 bg-stone-50 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-                     <svg class="w-16 h-16 mx-auto mb-4 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
                     <h3 class="text-xl font-semibold mb-2 text-sky-700">Intégration Culturelle</h3>
-                    <p class="text-gray-600">Aider les jeunes à développer un sentiment d'appartenance à leur nouvelle communauté.</p>
+                    <p class="text-gray-600">Créer un sentiment d'appartenance à la communauté francophone locale.</p>
                 </div>
                 <div class="p-6 bg-stone-50 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-                     <svg class="w-16 h-16 mx-auto mb-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
                     <h3 class="text-xl font-semibold mb-2 text-emerald-700">Compétences Linguistiques</h3>
-                    <p class="text-gray-600">Faciliter l'apprentissage naturel du français grâce à une immersion complète.</p>
+                    <p class="text-gray-600">Renforcer ou initier les compétences en français par l'immersion.</p>
                 </div>
                 <div class="p-6 bg-stone-50 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-                     <svg class="w-16 h-16 mx-auto mb-4 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                     <h3 class="text-xl font-semibold mb-2 text-yellow-600">Sport et Plaisir</h3>
-                    <p class="text-gray-600">Apprendre par le jeu avec des activités comme le soccer, la danse et plus encore.</p>
+                    <h3 class="text-xl font-semibold mb-2 text-yellow-600">Sport et Plaisir</h3>
+                    <p class="text-gray-600">Apprendre en jouant : soccer, danse, activités culturelles.</p>
                 </div>
                 <div class="p-6 bg-stone-50 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-                    <svg class="w-16 h-16 mx-auto mb-4 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
-                    <h3 class="text-xl font-semibold mb-2 text-red-600">Bien-être Familial</h3>
-                    <p class="text-gray-600">Permettre aux parents de retrouver du temps personnel pendant que les enfants s'amusent.</p>
+                    <h3 class="text-xl font-semibold mb-2 text-purple-700">Ouverture Linguistique</h3>
+                    <p class="text-gray-600">Un environnement accueillant pour les enfants de parents non francophones.</p>
                 </div>
             </div>
         </div>
     </section>
 
-     <section class="py-16 bg-sky-100">
+    <section class="py-16 bg-sky-100">
         <div class="container mx-auto px-6 text-center">
             <h2 class="text-3xl font-bold text-sky-700 mb-6">Devenez Partenaire</h2>
             <p class="text-lg text-gray-700 max-w-3xl mx-auto mb-8">
-                Collaborez avec nous en tant qu'école, centre communautaire ou municipalité pour renforcer l'intégration francophone dans notre communauté.
+                Collaborons avec écoles, municipalités et centres communautaires pour bâtir ensemble une communauté francophone forte et inclusive.
             </p>
             <img src="images/image1.jpeg"
-                 alt="Logos des partenaires institutionnels et commanditaires"
+                 alt="Logos de partenaires institutionnels"
                  class="mx-auto rounded-lg mb-8 w-full max-w-2xl"
-                 onerror="this.onerror=null; this.src='https://placehold.co/800x150/fecaca/991b1b?text=Image+non+disponible'; this.alt='Image non disponible'">
+                 onerror="this.onerror=null; this.src='https://placehold.co/800x150/fecaca/991b1b?text=Image+non+disponible';">
             <a href="partners.html" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out btn-hover-effect">Collaborer avec nous</a>
         </div>
     </section>
@@ -141,23 +141,23 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
                     <h4 class="text-lg font-semibold mb-3 text-white">Intégration Francophone</h4>
-                    <p class="text-sm">Faciliter l'adaptation des familles immigrantes francophones par le sport et la culture.</p>
-                    </div>
+                    <p class="text-sm">Un programme pour apprendre, vivre et grandir en français au Canada.</p>
+                </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-3 text-white">Liens Rapides</h4>
                     <ul class="space-y-2 text-sm">
                         <li><a href="about.html" class="hover:text-orange-400">À Propos</a></li>
                         <li><a href="programs.html" class="hover:text-orange-400">Nos Programmes</a></li>
                         <li><a href="registration.html" class="hover:text-orange-400">Inscription</a></li>
-                        <li><a href="contact.html" class="hover:text-orange-400">Contactez-Nous</a></li>
-                         <li><a href="partners.html" class="hover:text-orange-400">Partenariats</a></li>
+                        <li><a href="partners.html" class="hover:text-orange-400">Partenariats</a></li>
+                        <li><a href="contact.html" class="hover:text-orange-400">Contact</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-3 text-white">Contact</h4>
                     <p class="text-sm">Winnipeg, Manitoba, Canada</p>
                     <p class="text-sm">Email: <a href="mailto:info@integrationfrancophone.ca" class="hover:text-orange-400">info@integrationfrancophone.ca</a></p>
-                     <p class="text-sm">Téléphone: <a href="tel:+12045551234" class="hover:text-orange-400">+1 (204) 555-1234</a></p>
+                    <p class="text-sm">Téléphone: <a href="tel:+12045551234" class="hover:text-orange-400">+1 (204) 555-1234</a></p>
                 </div>
             </div>
             <div class="text-center text-gray-500 text-sm mt-8 pt-8 border-t border-gray-700">
@@ -167,7 +167,7 @@
     </footer>
 
     <script>
-        // Mobile Menu Toggle
+        // Toggle mobile menu
         const menuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
 
@@ -177,7 +177,7 @@
             });
         }
 
-        // Set current year in footer
+        // Current year in footer
         const yearSpan = document.getElementById('current-year');
         if (yearSpan) {
             yearSpan.textContent = new Date().getFullYear();
