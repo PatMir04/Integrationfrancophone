@@ -14,17 +14,27 @@
             /* Using a light stone color as a beige base */
             background-color: #f5f5f4; /* Tailwind stone-100 */
         }
-        /* Add custom styles here if needed */
+        /* Hero Background Image */
         .hero-bg {
-            /* Placeholder for a background image - replace with your own */
-            background-image: url('https://placehold.co/1200x600/e2e8f0/64748b?text=Image+Hero+(Ex:+Enfants+jouant)');
+            /* Updated to use image2.jpg */
+            background-image: url('images/image2.jpg');
             background-size: cover;
             background-position: center;
+            /* Fallback background color if image fails */
+            background-color: #e2e8f0; /* Tailwind slate-200 */
         }
         /* Simple animation for buttons on hover */
         .btn-hover-effect:hover {
             transform: translateY(-2px);
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        /* Ensure images don't exceed their container width */
+        img {
+           max-width: 100%;
+           height: auto;
+           display: block; /* Prevents bottom space */
+           margin-left: auto; /* Center images */
+           margin-right: auto;
         }
     </style>
 </head>
@@ -42,19 +52,30 @@
                 <a href="impact.html" class="text-gray-700 hover:text-orange-600">Notre Impact</a>
                 <a href="contact.html" class="text-gray-700 hover:text-orange-600">Contact</a>
             </div>
-            <button class="md:hidden flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-orange-600 hover:border-orange-600">
+            <button id="mobile-menu-button" class="md:hidden flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-orange-600 hover:border-orange-600">
                 <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
             </button>
         </nav>
+        <div id="mobile-menu" class="md:hidden hidden bg-white shadow-md">
+             <a href="index.html" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Accueil</a>
+             <a href="about.html" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">À Propos</a>
+             <a href="programs.html" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Programmes</a>
+             <a href="registration.html" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Inscription</a>
+             <a href="partners.html" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Partenariats</a>
+             <a href="impact.html" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Notre Impact</a>
+             <a href="contact.html" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Contact</a>
+        </div>
     </header>
 
     <section class="hero-bg text-white py-24 md:py-32">
-        <div class="container mx-auto px-6 text-center bg-black bg-opacity-50 rounded-lg py-10">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">S'épanouir en français, ensemble.</h1>
-            <p class="text-lg md:text-xl mb-8">Facilitons l'adaptation des familles immigrantes francophones au Canada par le sport et la communauté.</p>
-            <div class="space-x-4">
-                <a href="registration.html" class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out btn-hover-effect">Inscrivez votre enfant</a>
-                <a href="programs.html" class="bg-transparent border-2 border-white hover:bg-white hover:text-orange-600 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out btn-hover-effect">Découvrez nos programmes</a>
+        <div class="bg-black bg-opacity-60">
+            <div class="container mx-auto px-6 text-center py-10">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">S'épanouir en français, ensemble.</h1>
+                <p class="text-lg md:text-xl mb-8">Facilitons l'adaptation des familles immigrantes francophones au Canada par le sport et la communauté.</p>
+                <div class="space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="registration.html" class="inline-block bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out btn-hover-effect">Inscrivez votre enfant</a>
+                    <a href="programs.html" class="inline-block bg-transparent border-2 border-white hover:bg-white hover:text-orange-600 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out btn-hover-effect">Découvrez nos programmes</a>
+                </div>
             </div>
         </div>
     </section>
@@ -65,7 +86,10 @@
             <p class="text-lg text-gray-700 max-w-3xl mx-auto mb-8">
                 Notre programme unique utilise le sport et les activités culturelles pour aider les enfants immigrants francophones (5-12 ans) à s'intégrer, à développer leurs compétences linguistiques en français et à tisser des liens durables dans un environnement amusant et inclusif.
             </p>
-            <img src="https://placehold.co/600x400/d1fae5/10b981?text=Enfants+souriants+jouant+(Image+2)" alt="Enfants francophones jouant au soccer" class="mx-auto rounded-lg shadow-lg mb-8" onerror="this.onerror=null; this.src='https://placehold.co/600x400/fecaca/991b1b?text=Image+non+disponible';">
+            <img src="images/image11.jpg"
+                 alt="Enfants francophones courant et jouant au soccer en plein air"
+                 class="mx-auto rounded-lg shadow-lg mb-8 w-full max-w-xl"
+                 onerror="this.onerror=null; this.src='https://placehold.co/600x400/fecaca/991b1b?text=Image+non+disponible'; this.alt='Image non disponible'">
              <p class="text-md text-gray-600 italic">"Ensemble, créons un environnement où chaque enfant s'épanouit."</p>
         </div>
     </section>
@@ -104,7 +128,10 @@
             <p class="text-lg text-gray-700 max-w-3xl mx-auto mb-8">
                 Collaborez avec nous en tant qu'école, centre communautaire ou municipalité pour renforcer l'intégration francophone dans notre communauté.
             </p>
-            <img src="https://placehold.co/800x150/bfdbfe/1e3a8a?text=Logos+Partenaires+(Image+1)" alt="Logos des partenaires institutionnels" class="mx-auto rounded-lg mb-8" onerror="this.onerror=null; this.src='https://placehold.co/800x150/fecaca/991b1b?text=Image+non+disponible';">
+            <img src="images/image1.jpg"
+                 alt="Logos des partenaires institutionnels et commanditaires"
+                 class="mx-auto rounded-lg mb-8 w-full max-w-2xl"
+                 onerror="this.onerror=null; this.src='https://placehold.co/800x150/fecaca/991b1b?text=Image+non+disponible'; this.alt='Image non disponible'">
             <a href="partners.html" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out btn-hover-effect">Collaborer avec nous</a>
         </div>
     </section>
@@ -129,33 +156,31 @@
                 <div>
                     <h4 class="text-lg font-semibold mb-3 text-white">Contact</h4>
                     <p class="text-sm">Winnipeg, Manitoba, Canada</p>
-                    <p class="text-sm">Email: <a href="mailto:info@integrationfrancophone.ca" class="hover:text-orange-400">info@integrationfrancophone.ca</a></p> <p class="text-sm">Téléphone: <a href="tel:+1234567890" class="hover:text-orange-400">+1 (234) 567-890</a></p> </div>
+                    <p class="text-sm">Email: <a href="mailto:info@integrationfrancophone.ca" class="hover:text-orange-400">info@integrationfrancophone.ca</a></p>
+                     <p class="text-sm">Téléphone: <a href="tel:+12045551234" class="hover:text-orange-400">+1 (204) 555-1234</a></p>
+                </div>
             </div>
             <div class="text-center text-gray-500 text-sm mt-8 pt-8 border-t border-gray-700">
-                © 2025 Intégration des Immigrants Francophones. Tous droits réservés.
+                © <span id="current-year"></span> Intégration des Immigrants Francophones. Tous droits réservés.
             </div>
         </div>
     </footer>
 
     <script>
-        // Basic mobile menu toggle (optional)
-        const btn = document.querySelector("button.md\\:hidden"); // Select the mobile menu button
-        const menu = document.querySelector(".hidden.md\\:flex"); // Select the menu div
+        // Mobile Menu Toggle
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
 
-        // Check if button and menu exist before adding listener
-        if (btn && menu) {
-          btn.addEventListener("click", () => {
-            menu.classList.toggle("hidden"); // Toggle the 'hidden' class
-            menu.classList.toggle("flex"); // Add 'flex' to display it vertically
-            menu.classList.toggle("flex-col"); // Stack items vertically
-            menu.classList.toggle("absolute"); // Position it absolutely
-            menu.classList.toggle("top-16"); // Position below header
-            menu.classList.toggle("left-0"); // Align to left
-            menu.classList.toggle("right-0"); // Stretch to right
-            menu.classList.toggle("bg-white"); // Add white background
-            menu.classList.toggle("shadow-md"); // Add shadow
-            menu.classList.toggle("py-4"); // Add padding
-          });
+        if (menuButton && mobileMenu) {
+            menuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        // Set current year in footer
+        const yearSpan = document.getElementById('current-year');
+        if (yearSpan) {
+            yearSpan.textContent = new Date().getFullYear();
         }
     </script>
 
