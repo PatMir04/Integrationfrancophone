@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Programmes - Intégration Francophone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f5f5f4; /* Tailwind stone-100 */
+        }
+        /* Simple animation for buttons on hover */
+        .btn-hover-effect:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        /* Ensure images don't exceed their container width */
+        img {
+           max-width: 100%;
+           height: auto;
+           display: block;
+           margin-left: auto;
+           margin-right: auto;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <div class="bg-yellow-100 text-yellow-800 py-3 text-center font-medium text-lg shadow-sm">
+        <p>✨ Cette semaine : <strong>Danse au Centre culturel Saint-Boniface</strong> – Samedi 14h00 ! ✨</p>
+        <p class="text-sm text-gray-700 mt-1">
+            <a href="programs.html" class="underline text-orange-600 hover:text-orange-700">Voir tous les programmes</a>
+        </p>
+    </div>
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-orange-600">Intégration Francophone</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-gray-700 hover:text-orange-600">Accueil</a>
+                <a href="about.html" class="text-gray-700 hover:text-orange-600">À Propos</a>
+                <a href="programs.html" class="text-orange-600 font-medium border-b-2 border-orange-600">Programmes</a> <a href="registration.html" class="text-gray-700 hover:text-orange-600">Inscription</a>
+                <a href="partners.html" class="text-gray-700 hover:text-orange-600">Partenariats</a>
+                <a href="impact.html" class="text-gray-700 hover:text-orange-600">Notre Impact</a>
+                <a href="contact.html" class="text-gray-700 hover:text-orange-600">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-orange-600 hover:border-orange-600">
+                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="md:hidden hidden bg-white shadow-md">
+             <a href="index.html" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Accueil</a>
+             <a href="about.html" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">À Propos</a>
+             <a href="programs.html" class="block px-4 py-2 text-orange-600 bg-orange-100">Programmes</a> <a href="registration.html" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Inscription</a>
+             <a href="partners.html" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Partenariats</a>
+             <a href="impact.html" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Notre Impact</a>
+             <a href="contact.html" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Contact</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+        <h1 class="text-4xl font-bold text-center text-orange-600 mb-10">Nos Programmes d'Activités</h1>
+        <p class="text-lg text-center text-gray-700 max-w-3xl mx-auto mb-12">
+            Découvrez nos activités conçues pour les enfants de 5 à 12 ans. Toutes nos sessions se déroulent entièrement en français, favorisant l'immersion linguistique dans un cadre amusant et sportif.
+        </p>
+
+        <section class="space-y-10">
+
+            <div class="bg-white p-8 rounded-lg shadow-md grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h2 class="text-3xl font-semibold text-sky-700 mb-4">Soccer Francophone</h2>
+                    <p class="text-gray-700 mb-4">Apprenez les bases du soccer, développez l'esprit d'équipe et pratiquez votre français sur le terrain ! Des jeux adaptés à tous les niveaux pour un maximum de plaisir.</p>
+                    <ul class="text-gray-600 space-y-1 list-disc list-inside mb-4">
+                        <li>Coordination et motricité</li>
+                        <li>Règles du jeu et fair-play</li>
+                        <li>Communication en français</li>
+                    </ul>
+                    <a href="registration.html" class="inline-block bg-sky-600 hover:bg-sky-700 text-white font-bold py-2 px-5 rounded-lg shadow-md transition duration-300 ease-in-out btn-hover-effect">S'inscrire au Soccer</a>
+                </div>
+                 <div>
+                     <img src="images/image11.jpg" alt="Enfants jouant au soccer" class="rounded-lg shadow-md" onerror="this.onerror=null; this.src='https://placehold.co/600x400/bfdbfe/1e3a8a?text=Image+Soccer'; this.alt='Image non disponible'">
+                 </div>
+            </div>
+
+            <div class="bg-white p-8 rounded-lg shadow-md grid md:grid-cols-2 gap-8 items-center">
+                 <div class="order-2 md:order-1">
+                     <img src="images/image10.jpg" alt="Enfants participant à un cours de danse" class="rounded-lg shadow-md" onerror="this.onerror=null; this.src='https://placehold.co/600x400/fef3c7/92400e?text=Image+Danse'; this.alt='Image non disponible'">
+                 </div>
+                <div class="order-1 md:order-2">
+                    <h2 class="text-3xl font-semibold text-yellow-600 mb-4">Ateliers de Danse</h2>
+                    <p class="text-gray-700 mb-4">Exprimez-vous en mouvement ! Nos ateliers de danse explorent différents styles dans une ambiance joyeuse et 100% francophone. Parfait pour développer la créativité et la confiance.</p>
+                    <ul class="text-gray-600 space-y-1 list-disc list-inside mb-4">
+                        <li>Expression corporelle et rythme</li>
+                        <li>Découverte de styles variés</li>
+                        <li>Coordination et écoute musicale</li>
+                    </ul>
+                     <a href="registration.html" class="inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-5 rounded-lg shadow-md transition duration-300 ease-in-out btn-hover-effect">S'inscrire à la Danse</a>
+                </div>
+            </div>
+
+             <div class="bg-stone-50 p-8 rounded-lg shadow-md text-center">
+                <h2 class="text-3xl font-semibold text-emerald-700 mb-4">Bientôt Disponible !</h2>
+                <p class="text-gray-700 mb-4 max-w-2xl mx-auto">Nous prévoyons d'élargir notre offre avec de nouvelles activités passionnantes comme le basketball et des jeux éducatifs en français. Restez à l'écoute !</p>
+                 <svg class="w-16 h-16 mx-auto mb-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
+            </div>
+
+        </section>
+
+        <section class="mt-16 pt-10 border-t border-gray-300 text-center">
+             <h2 class="text-3xl font-semibold text-gray-800 mb-6">Horaire Type</h2>
+             <p class="text-lg text-gray-700 max-w-3xl mx-auto mb-4">
+                 Nos programmes fonctionnent généralement par sessions hebdomadaires.
+             </p>
+             <div class="inline-block bg-white p-6 rounded-lg shadow-md text-left">
+                 <p class="text-gray-800 font-medium"><span class="text-orange-600 font-bold">Fréquence :</span> 4 sessions par semaine (exemple)</p>
+                 <p class="text-gray-800 font-medium"><span class="text-orange-600 font-bold">Durée :</span> 1h30 par session (exemple)</p>
+                 <p class="text-gray-800 font-medium"><span class="text-orange-600 font-bold">Capacité :</span> ~20 enfants par session</p>
+                 <p class="text-sm text-gray-500 mt-2">Consultez la page d'inscription pour l'horaire détaillé et les disponibilités.</p>
+             </div>
+              <div class="mt-8">
+                 <a href="registration.html" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out btn-hover-effect">Voir l'horaire et s'inscrire</a>
+             </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 py-10">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-lg font-semibold mb-3 text-white">Intégration Francophone</h4>
+                    <p class="text-sm">Faciliter l'adaptation des familles immigrantes francophones par le sport et la culture.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-3 text-white">Liens Rapides</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="about.html" class="hover:text-orange-400">À Propos</a></li>
+                        <li><a href="programs.html" class="hover:text-orange-400">Nos Programmes</a></li>
+                        <li><a href="registration.html" class="hover:text-orange-400">Inscription</a></li>
+                        <li><a href="contact.html" class="hover:text-orange-400">Contactez-Nous</a></li>
+                         <li><a href="partners.html" class="hover:text-orange-400">Partenariats</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-3 text-white">Contact</h4>
+                    <p class="text-sm">Winnipeg, Manitoba, Canada</p>
+                    <p class="text-sm">Email: <a href="mailto:info@integrationfrancophone.ca" class="hover:text-orange-400">info@integrationfrancophone.ca</a></p>
+                    <p class="text-sm">Téléphone: <a href="tel:+12045551234" class="hover:text-orange-400">+1 (204) 555-1234</a></p>
+                </div>
+            </div>
+            <div class="text-center text-gray-500 text-sm mt-8 pt-8 border-t border-gray-700">
+                © <span id="current-year"></span> Intégration des Immigrants Francophones. Tous droits réservés.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (menuButton && mobileMenu) {
+            menuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+        // Set current year in footer
+        const yearSpan = document.getElementById('current-year');
+        if (yearSpan) {
+            yearSpan.textContent = new Date().getFullYear();
+        }
+    </script>
+
+</body>
+</html>
